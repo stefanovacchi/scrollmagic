@@ -1,0 +1,18 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  font-size: 32px; 
+}
+
+.icon-info {
+  font-size: 64px;
+}
+
+.icon-keyboard_arrow_down {
+  animation: scrollDown 0.5s infinite;
+  animation-direction: alternate;
+}

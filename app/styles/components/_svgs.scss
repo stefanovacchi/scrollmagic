@@ -1,0 +1,84 @@
+.svgs {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.svgs--max-skate {
+  width: 5400px;
+  max-height: 950px;
+  height: 100%;
+}
+
+.svgs--max-and-becki {
+  width: 500%;
+  max-width: 9600px;
+  max-height: 1080px;
+  height: 100%;
+}
+
+.svgs--sarina-ballons {
+  width: 2100px;
+  max-height: 700px;
+  height: 100%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.svgs--daten-volumen {
+  width: 500px;
+  height: 500px;
+  margin-top: -5px;
+  margin-left: -40px;
+}
+
+.svgs--becki-sms {
+  width: 500px;
+  height: 500px;
+  margin-top: -5px;
+  margin-left: -150px;
+}
+
+.svgs--broken-phone {
+  width: 500px;
+  height: 500px;
+  margin-top: -100px;
+  margin-left: -130px;
+}
+
+.svgs--lantern-vg {
+  margin-left: -50%;
+}
+
+.svgs--maske {
+  
+  &:not(:root) {
+    overflow: visible!important;
+  }  
+}
+#base-mask {
+  fill: $brand-magenta;
+}
+#hart {
+  fill: #000;
+}
+
+.svgs--sun {
+  animation: rotating 10s linear infinite;
+}
+
+.svgs--dtag-animation {
+  width: 7360px;
+  //max-height: 920px;
+  height: 100%;
+}
+
+
+.svgs--bernd-animation {
+  width: 15360px;
+  //max-height: 800px;
+  height: 100%;
+}
+

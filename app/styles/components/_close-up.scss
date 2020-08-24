@@ -1,0 +1,36 @@
+.close-up {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	border-radius: 300px;
+	margin-top: -150px;
+	margin-left: -150px;
+	top: 50%;
+	left: 50%;
+	overflow: hidden;
+	border:1px solid #fff;
+	z-index: 9;
+	transform: scale(0);
+}
+.close-up--daten-volumen {
+	margin-left: 0;
+	background: rgba(0,0,0,0.5);
+	transform-origin: 0 50%;
+
+}
+.close-up--broken-phone {
+	// width: 400px;
+	// height: 400px;
+	// border-radius: 300px;
+	top: auto;
+	left: auto;
+	right: 50%;
+	bottom: 10%;
+	transform-origin: 100% 100%;
+	background: #80C9F1;
+}
+
+.close-up--becki-sms {
+	background: rgba(0,0,0,0.5);
+	transform-origin: 100% 50%;
+}

@@ -1,0 +1,60 @@
+.scene {
+	width: 100%;
+	min-height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.scene__text {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 5%;
+	left: 0;
+	z-index: 2;
+	
+	p {
+		margin: 0 10px;
+		padding: 10px;
+		background: white;
+		display: inline-block;
+		color: green;
+	}
+}
+
+.scene-pos {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    visibility: hidden;
+}
+
+.scene-pos--max-skate-in {top: 100%;}
+.scene-pos--bam {top: 600%;}
+.scene-pos--max-skate-out{top: 650%;}
+// .scene-pos--home {top: 1500%;}
+.scene-pos--box {top: 2150%;}
+// .scene-pos--stream {top: 1300%;}
+
+.scene-bg, .scene-vg {
+	position: absolute;
+	z-index: 0;
+}
+
+.scene-bg--scene {
+	width: 100%;
+	height: 200%;
+	bottom: 0;
+	left: 0;
+	background: url(../images/svgs/landscape.svg) no-repeat center bottom;
+	background-size: cover; 
+	overflow: visible;
+}
+
+

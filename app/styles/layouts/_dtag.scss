@@ -1,0 +1,26 @@
+.dtag {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	padding: 2rem;
+}
+
+.dtag--headline {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 22px 2rem 2rem 90px;
+}
+
+.dtag--footer {
+	position: relative;
+	background: #444;
+	align-items: center;
+	height: 15%;
+}
+
+.claim {
+	line-height: 76px;
+	font-family: 'TeleGroteskHeadline-Ultra';
+}

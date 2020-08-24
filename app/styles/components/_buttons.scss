@@ -1,0 +1,196 @@
+//
+// Base styles
+//
+
+.btn {
+	display: inline-block;
+	line-height: 1.25;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	user-select: none;
+	border: 1px solid transparent;
+	transition: color .2s ease-in-out, background .2s ease-in-out;
+	text-decoration: none;
+	cursor: pointer;
+	color: $btn-color;
+	background-image: none;
+	background-color: transparent;
+	//border-color: $btn-color;
+	padding: 1rem;
+	font-size: 1rem;
+
+	&:hover {
+		color: $btn-color-hover;
+		background-color: $btn-color;
+		//border-color: $btn-color;
+	}
+	&:focus,
+	&.focus {
+		outline: 0;
+	}
+
+	&:active,
+	&.active {
+		background: $btn-color;
+		color: $btn-color-hover;
+	}
+	.icon {
+		vertical-align: middle;
+	}
+}
+
+.btn--link {
+	border: 0;
+	font-weight: normal;
+	padding: 0;
+	font-family: 'TeleGroteskHeadline-Ultra';
+	line-height: 2.5;
+	font-size: 1.3rem;
+	&:hover {
+		color: $btn-color;
+		background-color: transparent;
+		border-color: transparent;
+	}
+}
+
+.btn--scroll {
+	background: transparent;
+	border: 0;
+	cursor: default;
+	span, svg {
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+	&:hover {
+		background: transparent;
+		color: #fff;
+	}
+}
+
+.btn--menu {
+	position: fixed;
+	border: none;
+	top: 31px;
+	left: 0;
+	z-index: 9999;
+	background: $brand-magenta;
+	&:hover, &:focus {
+		//.menu_opener, .menu_opener:before, .menu_opener:after {
+			background: $brand-magenta;
+		//}
+	}
+}
+
+.menu-icon {
+    position: relative;
+    width: 28px;
+    height: 20px;
+    cursor: pointer;
+    &.active {
+    	.menu_opener:before {
+		    -ms-transform: rotate(-45deg);
+		    transform: rotate(-45deg);
+		    top: 0;
+		}
+		.menu_opener:after {
+		    -ms-transform: rotate(45deg);
+		    transform: rotate(45deg);
+		    top: 0;
+		}
+		.menu_opener {
+		    background: rgba(255,255,255,0);
+		}
+    }
+}
+
+.menu_opener {
+    display: block;
+    cursor: pointer;
+    top: 9px;
+    background: white;
+    position: absolute;
+    z-index: 1;
+    width: 28px;
+    height: 3px;
+    transition: all .4s ease;
+    &:before {
+	    position: absolute;
+	    top: 9px;
+	    left: 0;
+	    background: white;
+	    content: "";
+	    width: 28px;
+	    height: 3px;
+	    transition: all .4s ease;
+	}
+	&:after {
+	    position: absolute;
+	    top: -9px;
+	    left: 0;
+	    background: white;
+	    content: "";
+	    width: 28px;
+	    height: 3px;
+	    transition: all .4s ease;
+	}
+}
+
+.btn--close {
+	position: fixed;
+	border: none;
+	top: 25px;
+	right: 0;
+	z-index: 9999;
+	background: $brand-magenta;
+	display: none;
+	color: #fff;
+	&:hover, &:focus {
+		background: $brand-magenta;
+		color: #fff;
+	}
+}
+
+.btn--info {
+	position: absolute;
+	z-index: 9;
+	border: 0;
+	padding: 0;
+	opacity: 0;
+	visibility: hidden;
+	&:hover, &:focus {
+		background: transparent;
+	}
+}
+
+.btn--info-bernd {
+	top: 10.6%;
+	left: 50%;
+}
+
+.btn--info-magenta-overview {
+	top: -20px;
+	left: 100%;
+}
+
+.btn--info-dtag {
+	bottom: 10.4%;
+	left: 23.3%;
+}
+
+.btn--scroll-to-top {
+	position: absolute;
+	right: 1rem;
+	bottom: 15%;
+	z-index: 9;
+}
+
+@media screen and (orientation:portrait) {
+	.btn--info-dtag {
+		top: 1rem;
+		left: auto;
+		right: 1rem;
+		bottom: auto;
+	}
+}

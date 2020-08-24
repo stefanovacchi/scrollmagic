@@ -1,0 +1,66 @@
+doctype html
+html.no-js(lang='')
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Sarina
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    // Place favicon.ico in the root directory
+    link(href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet")
+
+    // build:css styles/vendor.css
+    // bower:css
+    link(rel='stylesheet', href='/bower_components/normalize-css/normalize.css')
+    // endbower
+    // endbuild
+
+    // build:css styles/main.css
+    link(rel='stylesheet', href='styles/main.css')
+    // endbuild
+
+    // build:js scripts/vendor/modernizr.js
+    script(src='/bower_components/modernizr/modernizr.js')
+    // endbuild
+  body
+    .message
+        
+    .wrapper
+        header.header
+          block navigation
+
+        main.main(role='main')
+          block content
+
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    //- script.
+    //-   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    //-   function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    //-   e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    //-   e.src='https://www.google-analytics.com/analytics.js';
+    //-   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    //-   ga('create','UA-XXXXX-X');ga('send','pageview');
+
+    // build:js scripts/vendor.js
+    // bower:js
+    script(src='/bower_components/jquery/dist/jquery.js')
+    script(src='/bower_components/modernizr/modernizr.js')
+    script(src='/bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js')
+    script(src='/bower_components/gsap/src/uncompressed/TweenMax.js')
+    script(src='/bower_components/svgxuse/svgxuse.js')
+    // endbower
+    //- script(src='/node_modules/systemjs/dist/system-polyfills.js')
+    script(src='/bower_components/system.js/dist/system-production.js')
+    // endbuild
+
+    // build:js scripts/plugins.js
+    script(src='/bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js')
+    //- script(src='/bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js')
+    // endbuild
+    
+    script.
+        System.import('./scripts/main.js');
+
+    // build:js scripts/main.js
+    //-script(src='scripts/main.js')
+    // endbuild

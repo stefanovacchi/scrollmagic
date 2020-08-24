@@ -1,0 +1,17 @@
+.section {
+	width: 100%!important;
+	min-height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.section--blue { background: $brand-blue; }
+.section--yellow { background: $brand-yellow; }
+.section--green { background: $brand-green; }
+
+.section--intro {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

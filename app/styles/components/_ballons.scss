@@ -1,0 +1,41 @@
+.text-ballon {
+	position: absolute;
+	bottom: 70%;
+	transform: scale(0);
+	//max-height: 20%;
+	//overflow: auto;
+	
+	z-index: 4;
+	background-color: #fff;
+	padding: 10px;
+	max-width: 550px;
+	min-width: 300px;
+	width: 300px;
+	left: 40%;
+	transform-origin: 0 100%;
+	p {
+		color: #000;
+		margin: 0;
+		padding: 0;
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		top: 99%;
+		width: 0; 
+		height: 0; 
+		line-height: 0px; 
+		border-bottom: 20px solid transparent; 
+		border-left: 20px solid #fff; 
+		border-right: 20px solid transparent;
+		right: 50%;
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+	.text-ballon {
+		bottom: 80%;
+		left: 20%;
+	}
+}

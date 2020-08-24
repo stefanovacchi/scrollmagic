@@ -1,0 +1,17 @@
+{
+  "name": "webapp",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "modernizr": "~2.8.1",
+    "scrollmagic": "^2.0.5",
+    "gsap": "^1.19.1",
+    "system.js": "^0.20.12",
+    "svgxuse": "^1.2.4",
+    "normalize-css": "^6.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
