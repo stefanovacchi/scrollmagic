@@ -31,7 +31,7 @@
     "gulp-useref": "^3.0.0",
     "main-bower-files": "^2.5.0",
     "run-sequence": "^1.2.2",
-    "wiredep": "git+https://github.com/taptapship/wiredep.git"
+    "wiredep": "^4.0.0"
   },
   "eslintConfig": {
     "env": {
